@@ -1,0 +1,22 @@
+[server]
+65.109.61.100
+
+[all:vars]
+ansible_ssh_port=11421
+ansible_ssh_user=ubuntu
+ansible_ssh_private_key_file="~/.ssh/id_rsa"
+
+hostname="polkachu"
+deployment_user="nkbblocks"
+ssh_port=22222
+disable_root=true
+
+# Node Exporter
+node_exporter=false
+node_exporter_version='1.2.2'
+
+# Promtail
+promtail=false
+promtail_version='2.4.1'
+promtail_monitor='http://192.168.0.0:3100'
+promtail_name=something
